@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 860px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
+    background-color: #fff;
+    box-shadow: 0 0 25px #0003;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    min-height: 500px;
+    grid-column: span 2;
+}
+
+.item-img {
+    background-color: rgba(1, 48, 66, 0.8);
+    position: relative;
+}
+
+.item-img::after {
+    position: absolute;
+    content: 'NIKE';
+    width: 100%;
+    height: 180px;
+    font-size: 180px;
+    font-weight: 600;
+    transform: translateY(-50%);
+    top: 25%;
+    left: 0;
+    text-align: center;
+    color: #fff2;
+    z-index: 0;
+
+}
+
+.item-img .product-img {
+    position: absolute;
+    top: 70%;
+    left: -2rem;
+    transform: translateY(-50%) rotate(20deg);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 100;
+}
+
+.item-img .logo {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    object-fit: cover;
+}
+
+.item-info {
+    padding: 1.2rem 2rem;
+}
+
+.item-info .title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 44px;
+    color: #000;
+}
+
+.item-info .subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #555;
+}
+
+.item-info .desc strong {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.item-info .desc p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #222;
+    padding: 0.25rem 0rem;
+}
+
+.item-info .colors {
+    padding: 1rem 0rem;
+}
+
+.item-info .colors strong {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.item-info .colors .list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0rem;
+}
+
+.item-info .colors span {
+    display: flex;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 1s;
+}
+
+.item-info .colors span:hover {
+    opacity: 1;
+}
+
+.item-info .sizes {
+    padding: 1rem 0rem;
+}
+
+.item-info .sizes strong {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.item-info .sizes .list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0rem;
+}
+
+.item-info .sizes span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(1, 48, 66, 0.8);
+    font-size: 13px;
+    color: rgba(1, 48, 66, 0.8);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.item-info .sizes span.active,
+.item-info .sizes span:hover {
+    border: 2px solid rgba(1, 48, 66, 0.8);
+    color: #222;
+}
+
+
+.item-info .footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.item-info .footer button {
+
+    padding: 0.85rem 1rem;
+    min-width: 180px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgba(1, 48, 66, 0.8);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.item-info .footer button:hover {
+    background-color: rgba(1, 48, 66);
+}
+
+.item-info .footer .price {
+    padding: 1rem 2rem;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(1, 48, 66, 0.8);
+    cursor: pointer;
+}
+
+.bg-red {
+    background-color: rgb(199, 45, 45) !important;
+}
+
+.bg-green {
+    background-color: rgb(70, 233, 119) !important;
+}
+
+.bg-yellow {
+    background-color: rgb(231, 216, 75) !important;
+}
+
+.bg-orange {
+    background-color: rgb(206, 68, 4) !important;
+}
+
+.bg-blue {
+    background-color: rgb(3, 72, 112) !important;
+}
+
+@media (max-width:720px) {
+
+    .wrapper {
+        padding: 0.8rem;
+
+    }
+
+    .item-img .product-img {
+        position: absolute;
+        top: 70%;
+        left: 0rem;
+        width: 100%;
+        height: fit-content;
+        object-fit: cover;
+
+    }
+}
